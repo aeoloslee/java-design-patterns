@@ -49,7 +49,7 @@ public class App {
   private Army army;
 
   /**
-   * Creates kingdom
+   * Creates kingdom 通过KingdomFactory工厂创建三个对象
    */
   public void createKingdom(final KingdomFactory factory) {
     setKing(factory.createKing());

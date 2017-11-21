@@ -25,6 +25,9 @@ package com.iluwatar.abstractfactory;
 /**
  * 
  * KingdomFactory factory interface.
+ * 工厂接口KingdomFactory
+ *
+ * <p>可以使用abstract class抽象类表定义，也可以使用接口定义</p>
  * 
  */
 public interface KingdomFactory {
