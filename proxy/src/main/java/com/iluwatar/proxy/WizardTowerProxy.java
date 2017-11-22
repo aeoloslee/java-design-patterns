@@ -28,6 +28,8 @@ import org.slf4j.LoggerFactory;
 /**
  * 
  * The proxy controlling access to the {@link IvoryTower}.
+ * 定义：给某个对象提供一个代理对象，并由代理对象控制对于原对象的访问，
+ * 即客户不直接操控原对象，而是通过代理对象间接地操控原对象。
  * 
  */
 public class WizardTowerProxy implements WizardTower {
@@ -41,16 +43,17 @@ public class WizardTowerProxy implements WizardTower {
   private final WizardTower tower;
 
   public WizardTowerProxy(WizardTower tower) {
-    this.tower = tower;
+        this.tower = tower;
   }
 
   @Override
   public void enter(Wizard wizard) {
     if (numWizards < NUM_WIZARDS_ALLOWED) {
-      tower.enter(wizard);
-      numWizards++;
+        // 在原对象调用的前后可以附加控制访问代码。
+        tower.enter(wizard);
+        numWizards++;
     } else {
-      LOGGER.info("{} is not allowed to enter!", wizard);
+        LOGGER.info("{} is not allowed to enter!", wizard);
     }
   }
 }
