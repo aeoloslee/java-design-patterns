@@ -29,6 +29,15 @@ package com.iluwatar.strategy;
  * 这与delegator的角色很像，delegaotr委托不同的delegate取处理不同的事情。
  *
  * 可能侧重点与理念有所不同吧
+ * 参考 https://brucezhang.wordpress.com/2009/05/07/strategy-pattern-and-delegate/
+ *
+ * 策略模式将方法封装到对象，OO思想严重。强调同一个算法的不同实现。
+ * 委托可能更加类似C++函数指针，OP面向过程。它更强调委托。可能委托不同的方法去处理(或委托不同的对象去处理相同的方法也可以：
+ * 此时更像策略模式，但是它不强调这样去实现)。
+ *
+ * 比如计算个税与企业税
+ * 策略模式：可能是接口定义一个计算税的方法，然后用两个不同的类去封装个税、企业税的不同算法。(更强调同一个算法策略的不同实现)
+ * 委托模式：也可以这样做。但是更好的做法是：delegete类提供个税和企业税两个方法，然后delegator去委托delegete去处理(更强调不同分类功能委托不同对象)。
  */
 public class DragonSlayer {
 
