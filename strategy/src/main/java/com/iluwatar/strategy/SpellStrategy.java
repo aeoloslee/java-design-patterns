@@ -28,7 +28,7 @@ import org.slf4j.LoggerFactory;
 /**
  * 
  * Spell strategy.
- *
+ * 策略3：Spell execute()实现
  */
 public class SpellStrategy implements DragonSlayingStrategy {
 

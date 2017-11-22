@@ -25,7 +25,7 @@ package com.iluwatar.strategy;
 /**
  * 
  * Strategy interface.
- * 
+ * 定义策略的接口
  */
 @FunctionalInterface
 public interface DragonSlayingStrategy {

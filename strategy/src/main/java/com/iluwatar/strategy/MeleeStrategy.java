@@ -28,7 +28,7 @@ import org.slf4j.LoggerFactory;
 /**
  * 
  * Melee strategy.
- *
+ * 策略1：Melee execute()实现
  */
 public class MeleeStrategy implements DragonSlayingStrategy {
 

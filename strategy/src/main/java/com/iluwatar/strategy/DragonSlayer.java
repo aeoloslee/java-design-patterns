@@ -25,20 +25,26 @@ package com.iluwatar.strategy;
 /**
  * 
  * DragonSlayer uses different strategies to slay the dragon.
- * 
+ * 策略控制：调度使用不同的策略对象to slay the dragon
+ * 这与delegator的角色很像，delegaotr委托不同的delegate取处理不同的事情。
+ *
+ * 可能侧重点与理念有所不同吧
  */
 public class DragonSlayer {
 
   private DragonSlayingStrategy strategy;
 
+  // 初始化策略
   public DragonSlayer(DragonSlayingStrategy strategy) {
     this.strategy = strategy;
   }
 
+  // 改变策略
   public void changeStrategy(DragonSlayingStrategy strategy) {
     this.strategy = strategy;
   }
 
+  // 执行策略
   public void goToBattle() {
     strategy.execute();
   }

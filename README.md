@@ -1,3 +1,17 @@
+#策略模式与委托原则的比较
+the strategy pattern is a very specific design solution to a common software problem. the strategy pattern implies that there will be
+
+an interface called Strategy (or with Strategy as part of the name). this interface should have a method called execute().
+one or more concrete classes called something like ConcreteStrategyA, ConcreteStrategyB, etc. that implement the Strategy interface.
+there should also be a context class that contains the Strategy
+delegation is more a principal than a pattern. delegation implies that instead of having a single object be in charge of everything, it delegates responsibilities to other objects. the reason this is a common technique is that it enforces two even more fundamental principals of software development by lessening coupling and increasing cohesiveness.
+
+#关注原则而不是模式
+Having said all that, don't worry about patterns. Focus on the principals and if you feel your solution
+could be improved upon - look to the patterns to see if there is a better mousetrap. If you focus on
+patterns instead of principals, you will find yourself getting lost in all the patterns and
+implementing patterns for the sake of implementing patterns...
+
 <!-- the line below needs to be an empty line C: (its because kramdown isnt
      that smart and dearly wants an empty line before a heading to be able to
      display it as such, e.g. website) -->
