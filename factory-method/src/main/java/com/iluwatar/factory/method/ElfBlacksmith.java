@@ -25,10 +25,13 @@ package com.iluwatar.factory.method;
 /**
  * 
  * Concrete subclass for creating new objects.
- * 
+ * 角色：ConcreteProduct
  */
 public class ElfBlacksmith implements Blacksmith {
 
+  /**
+   * 工厂方法 创建武器这个产品
+   */
   public Weapon manufactureWeapon(WeaponType weaponType) {
     return new ElfWeapon(weaponType);
   }

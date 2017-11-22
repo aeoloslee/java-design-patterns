@@ -29,6 +29,9 @@ package com.iluwatar.factory.method;
  */
 public class OrcBlacksmith implements Blacksmith {
 
+  /**
+   * 工厂方法 创建武器这个产品
+   */
   public Weapon manufactureWeapon(WeaponType weaponType) {
     return new OrcWeapon(weaponType);
   }

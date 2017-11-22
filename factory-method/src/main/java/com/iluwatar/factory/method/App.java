@@ -63,16 +63,17 @@ public class App {
    * @param args command line args
    */
   public static void main(String[] args) {
-    // Lets go to war with Orc weapons
+    // Lets go to war with Orc weapons 创建ORC类武器。
     App app = new App(new OrcBlacksmith());
     app.manufactureWeapons();
     
-    // Lets go to war with Elf weapons
+    // Lets go to war with Elf weapons 创建ELF类武器。
     app = new App(new ElfBlacksmith());
     app.manufactureWeapons();
   }
   
   private void manufactureWeapons() {
+    // 某种类型ORC或ELF下的细分武器类型。
     Weapon weapon;
     weapon = blacksmith.manufactureWeapon(WeaponType.SPEAR);
     LOGGER.info(weapon.toString());

@@ -36,6 +36,7 @@ public final class Hero {
   private final Armor armor;
   private final Weapon weapon;
 
+  // TODO:实际对象的创建交给Builder构建器，提供每一项属性的动态增删。
   private Hero(Builder builder) {
     this.profession = builder.profession;
     this.name = builder.name;
@@ -100,10 +101,12 @@ public final class Hero {
   /**
    * 
    * The builder class.
+   * Builder以静态内部类嵌套
    * 
    */
   public static class Builder {
 
+    // 含有与Hero对象相同的属性，以便可以赋值给Hero的每个值
     private final Profession profession;
     private final String name;
     private HairType hairType;
@@ -113,6 +116,7 @@ public final class Hero {
 
     /**
      * Constructor
+     * 必须的属性两个：profession和name，其他的数据信息是附加的。
      */
     public Builder(Profession profession, String name) {
       if (profession == null || name == null) {
@@ -124,6 +128,7 @@ public final class Hero {
 
     public Builder withHairType(HairType hairType) {
       this.hairType = hairType;
+      // TODO：核心，附加属性之后返回原始对象，可以支持链式call调用。
       return this;
     }
 
@@ -142,6 +147,7 @@ public final class Hero {
       return this;
     }
 
+    // TODO:提供一个build方法
     public Hero build() {
       return new Hero(this);
     }

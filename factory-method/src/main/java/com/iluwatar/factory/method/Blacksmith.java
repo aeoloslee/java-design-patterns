@@ -25,7 +25,7 @@ package com.iluwatar.factory.method;
 /**
  * 
  * The interface containing method for producing objects.
- * 
+ * 定义工厂方法所创建的对象(产品)的接口。角色：Product
  */
 public interface Blacksmith {
 
