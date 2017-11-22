@@ -25,7 +25,7 @@ package com.iluwatar.decorator;
 /**
  * 
  * Interface for trolls
- *
+ * Component接口
  */
 public interface Troll {
 

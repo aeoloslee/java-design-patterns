@@ -27,6 +27,7 @@ import org.slf4j.LoggerFactory;
 
 /**
  * Decorator that adds a club for the troll
+ * 2级包装器
  */
 public class ClubbedTroll extends TrollDecorator {
 

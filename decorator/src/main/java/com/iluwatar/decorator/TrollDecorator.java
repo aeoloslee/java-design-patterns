@@ -26,10 +26,11 @@ package com.iluwatar.decorator;
  * TrollDecorator is a decorator for {@link Troll} objects. The calls to the {@link Troll} interface
  * are intercepted and decorated. Finally the calls are delegated to the decorated {@link Troll}
  * object.
- *
+ * 1级包装器 基础包装器(高层)，用来嵌入其他包装器子对象的，并不提供具体的附加功能。
  */
 public class TrollDecorator implements Troll {
 
+  // TrollDecorator所包装的对象类型是Troll，该类型的具体类型是可以是任意Troll的子类型。
   private Troll decorated;
 
   public TrollDecorator(Troll decorated) {

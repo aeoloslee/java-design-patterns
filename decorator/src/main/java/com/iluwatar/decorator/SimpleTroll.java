@@ -28,7 +28,7 @@ import org.slf4j.LoggerFactory;
 /**
  * 
  * SimpleTroll implements {@link Troll} interface directly.
- *
+ * Component接口基本功能实现类
  */
 public class SimpleTroll implements Troll {
 
