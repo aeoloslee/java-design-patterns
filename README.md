@@ -1,3 +1,5 @@
+设计模式参考：http://design-patterns.readthedocs.io/zh_CN/latest/read_uml.html
+
 #策略模式与委托原则的比较
 the strategy pattern is a very specific design solution to a common software problem. the strategy pattern implies that there will be
 
@@ -33,7 +35,8 @@ implementing patterns for the sake of implementing patterns...
 
 　　使用“抽象(Abstraction)”和“多态(Polymorphism)”将设计中的静态结构改为动态结构，维持设计的封闭性。任何基类可以出现的地方，子类一定可以出现。
 
-　　在软件中将一个基类对象替换成它的子类对象，程序将不会产生任何错误和异常，反过来则不成立。在程序中尽量使用基类类型来对对象进行定义，而在运行时再确定其子类类型，用子类对象来替换父类对象。
+　　在软件中将一个基类对象替换成它的子类对象，程序将不会产生任何错误和异常，反过来则不成立。在程序中尽量使用基类类型来对对象进行定义，
+   而在运行时再确定其子类类型，用子类对象来替换父类对象。
 
 依赖倒置原则
 
